@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    line-height: 2;
+}
+#navbar{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 5rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0,0,0,.9);
+    color: #fff;
+    box-sizing: border-box;
+}
+#navbar .logo{
+    display: flex;
+    align-items: center;
+}
+#navbar .logo h2{
+    cursor: pointer;
+    font-size: 2rem;
+}
+#navbar ul{
+    display: flex;
+    margin-left: 3rem;
+}
+#navbar ul li{
+    margin-left: .6rem;
+    list-style-type: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 1.1rem;
+    font-size: 1.3rem;
+}
+#navbar ul li:nth-child(5){
+    display: none;
+}
+#navbar ul li a:hover{
+    background: rgba(225, 225, 225, .2);
+}
+#navbar .buttons{
+    display: flex;
+    margin-right: 1rem;
+}
+#navbar .buttons input{
+    padding: .3rem;
+    border-top-left-radius: .2rem;
+    border-bottom-left-radius: .2rem;
+    border: none;
+    outline: none;
+}
+#navbar .buttons .btn{
+    width: 5rem;
+    font-size: 1rem;
+    padding: .4rem;
+    cursor: pointer;
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+    border: none;
+    outline: none;
+    background: #138065;
+    color: #fff;
+    font-weight: bold;
+}
+#navbar .buttons .btn:hover{
+    background: rgb(0, 97, 61);
+}
+#navbar .bars{
+    width: 1.5rem;
+    height: 1.1rem;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+}
+.bars .bar1{
+    width: 100%;
+    height: .1rem;
+    background: #fff;
+}
+.bars .bar2{
+    width: 100%;
+    height: .1rem;
+    background: #fff;
+}
+.bars .bar3{
+    width: 100%;
+    height: .1rem;
+    background: #fff;
+}
+h1{
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 7rem 0 6rem 0;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+
+}
+#search_input{
+    width: 60%;
+    max-width: 40rem;
+    padding: 1.2rem 2rem;
+    border: none;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+#search_button{
+    padding: .6rem 2rem;
+    background-color: #138065;
+    color: #fff;
+    border: none;
+    font-size: 1.8rem;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    border-radius: .5rem;
+    margin-left: 1rem;
+}
+.search_results{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 113rem;
+    margin: 0 auto;
+    padding: .8rem;
+}
+.search_result{
+    margin-bottom: 6rem;
+    width: 30%;
+    height: 100%;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, .2);
+    overflow: hidden;
+}
+.search_result img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity .3s ease-in-out;
+}
+.search_result:hover img{
+    opacity: .8;
+}
+
+.search_result a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 1rem;
+    text-transform: capitalize;
+}
+#show_more_button{
+    background: #008cba;
+    font-size: 1.8rem;
+    border: none;
+    color: #fff;
+    padding: .8rem 2rem;
+    text-align: center;
+    display: block;
+    margin: 3rem auto;
+    border-radius: .5rem;
+    cursor: pointer;
+    display: none;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+  }
+  .footer a{
+    color: rgb(247, 180, 8);
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  .footer p{
+    font-size: 1.1rem;
+    font-weight: none;
+  }
+
+@media screen and (max-width: 768px){
+    .search_results{
+        padding: 2rem;
+    }
+    .search_result{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .search_result{
+        width: 100%;
+    }
+}

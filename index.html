@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Search -Realtime Website New for Users</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/phone.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <h2>iGallery</h2>
+            <ul id="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <input type="text" placeholder="Search">
+            <button class="btn">Search</button>
+        </div>
+        <div class="bars" onclick="myNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+    <h1>Image Search App</h1>
+    <form action="">
+        <input type="text" id="search_input" placeholder="Search for images">
+        <button id="search_button">Search</button>
+    </form>
+    <div class="search_results">
+        <div class="search_result">
+            <img src="https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Steeped Serenity: A Moment with Tea">
+            <a href="https://unsplash.com/photos/lsdA8QpWN_A" target="_blank">Steeped Serenity: A Moment with Tea</a>
+        </div>
+        <div class="search_result">
+            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Explore the World in the Beautiful Way">
+            <a href="https://unsplash.com/photos/lsdA8QpWN_A" target="_blank">
+                Explore the World in the Beautiful Way
+            </a>
+        </div>
+        <div class="search_result">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Coding Chronicles: Unveiling the Virtual World">
+            <a href="https://unsplash.com/photos/lsdA8QpWN_A" target="_blank">Coding Chronicles: Unveiling the Virtual World</a>
+        </div>
+        <div class="footer">
+            <a href="#">Gallery&nbsp;</a>
+            <p>created with&nbsp;</p>
+            <a href="#" class="irfan">Irfan</a>
+          </div>
+    </div>
+
+    <button id="show_more_button">Show More</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
